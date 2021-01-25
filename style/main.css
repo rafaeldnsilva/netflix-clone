@@ -1,13 +1,7 @@
+/**Declaração de variáveis**/
 :root {
     --vermelho_netflix: #e30911;
     --preto_netflix: #141414;
-}
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    text-decoration: none;
 }
 
 body {
@@ -19,3 +13,5 @@ header .logo {
     font-size: 40px;
     font-family: Arial Black;
 }
+
+
