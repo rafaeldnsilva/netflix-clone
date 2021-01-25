@@ -1,0 +1,21 @@
+:root {
+    --vermelho_netflix: #e30911;
+    --preto_netflix: #141414;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: var(--preto_netflix);
+}
+
+header .logo {
+    color: var(--vermelho_netflix);
+    font-size: 40px;
+    font-family: Arial Black;
+}
