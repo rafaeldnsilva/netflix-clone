@@ -4,14 +4,41 @@
     --preto_netflix: #141414;
 }
 
+/**Elementos base**/
 body {
     background: var(--preto_netflix);
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row; /**padrão do display flex, não é necessário colocar**/
+    align-items: center;
+    justify-content: space-between;
 }
 
 header .logo {
     color: var(--vermelho_netflix);
     font-size: 40px;
-    font-family: Arial Black;
+    font-family: 'Arial Black', Times;
+    margin-left: 5px;
 }
 
+header nav a {
+    color: rgba(255, 255, 255, 0.87);
+    margin-right: 10px;
+}
 
+header nav a:hover {
+    color: #AAA;
+}
+
+/**Filme principal**/
+
+.atracao-principal {
+    font-size: 16px;
+    background: url('/img/imagem-fundo-principal.jpg');
+    height: 800px;
+    background-size: cover;
+}
