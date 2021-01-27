@@ -2,12 +2,13 @@
 :root {
     --vermelho_netflix: #e30911;
     --preto_netflix: #141414;
+    --branco_netflix: rgba(255, 255, 255, 0.87)
 }
 
 /**Elementos base**/
 body {
     background: var(--preto_netflix);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color: whitesmoke;
 }
 
@@ -21,12 +22,12 @@ header .container {
 header .logo {
     color: var(--vermelho_netflix);
     font-size: 40px;
-    font-family: 'Arial Black', Times;
+    font-family: 'Bebas Neue', Arial;
     margin-left: 5px;
 }
 
 header nav a {
-    color: rgba(255, 255, 255, 0.87);
+    color: var(--branco_netflix);
     margin-right: 10px;
 }
 
@@ -35,10 +36,44 @@ header nav a:hover {
 }
 
 /**Filme principal**/
-
 .atracao-principal {
     font-size: 16px;
-    background: url('/img/imagem-fundo-principal.jpg');
-    height: 800px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('/img/imagem-fundo-principal1.jpg');
+    height: 700px;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.atracao-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.titulo {
+    margin-top: 15%;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Helvetica, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: var(--branco_netflix);
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: var(--branco_netflix);
+    color: var(--preto_netflix);
+}
+
+.botao i {
+    margin-right: 8px;
 }
